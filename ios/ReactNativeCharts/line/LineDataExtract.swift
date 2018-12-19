@@ -31,6 +31,11 @@ class LineDataExtract : DataExtract {
             lineDataSet.circleRadius = CGFloat(config["circleRadius"].numberValue)
         }
         
+
+        if config["circleHoleRadius"].number != nil {
+          lineDataSet.circleHoleRadius = CGFloat(config["circleHoleRadius"].numberValue)
+        }
+
         
         if config["drawCircles"].bool != nil {
             lineDataSet.drawCirclesEnabled = config["drawCircles"].boolValue
